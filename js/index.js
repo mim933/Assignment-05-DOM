@@ -15,6 +15,7 @@ donateButton.addEventListener('click', function () {
     time.innerText = currentDate;
 
     console.log(mainBalance.innerText, '=')
+
     if (!isNaN(inputField.value)) {
         alert('Thanks for donating humanity')
 
