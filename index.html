@@ -11,10 +11,10 @@
 </head>
 
 <body class="">
-    <header>
+    <header class="sticky top-0 bg-white z-30 pb-10">
         <section class="bg-[#F9F7F3] h-20 shadow-md">
             <div class="flex justify-between  mt-2 max-w-4xl mx-auto  ">
-                <button class="px-8 py-2 rounded-lg bg-[#B4F461] font-semibold ">Blog</button>
+                <a href="Blog.html" class="block w-fit px-8 py-2 rounded-lg bg-[#B4F461] font-semibold ">Blog</a>
                 <div class="flex items-center justify-center">
                     <img class="mr-2 " src="./assets/logo.png" alt="">
                     <h4 class="text-xl font-semibold text-[#111111]">Donate Bangladesh</h4>
@@ -26,19 +26,20 @@
                 </div>
             </div>
         </section>
-    </header>
-    <main>
         <div class="flex items-center justify-center mt-16">
             <button id="donate-button" class="px-6 py-3 rounded-lg mr-4  bg-[#B4F461] border-none text-black">Donation</button>
             <button id="show-history" class="px-6 py-3 rounded-lg  bg-[#d7d4db] text-black">History</button>
         </div>
+    </header>
+    <main>
+       
         <section class="max-w-4xl mx-auto mt-16 ">
             <div id="donation-field" class="flex flex-col md:flex-row justify-center items-center gap-x-6  border-8 border-slate-100 rounded-xl ">
 
                 <img class="md:w-6/12 " src="./assets/noakhali.png" alt="">
 
                 <div class="md:w-6/12">
-                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md">
+                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md mt-6">
                         <img class="ml-2" src="./assets/coin.png" alt="">
                         <p class="text-sm font-normal mr-2"> <span id="balance">0</span>BDT</p>
                     </div>
@@ -55,8 +56,9 @@
         <!-- History section start -->
            <div id="Transaction-section" class="hidden">
               <h4 class=" text-2xl text-center font-bold">Transaction History</h4>
-              <div id="transaction-container">
-                   
+              <div id="transaction-container" class="border-2 border-slate-100 ">
+                   <p id="history" class="text-xl font-bold text-center"></p>
+                   <p id="history-time"></p>
               </div>
            </div>
         <!-- History section end -->
@@ -66,7 +68,7 @@
                 <img class="md:w-6/12 border border-slate-100 drop-shadow-xl rounded-xl" src="./assets/feni.png" alt="">
 
                 <div class="md:w-6/12">
-                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md">
+                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md mt-6">
                         <img class="ml-2" src="./assets/coin.png" alt="">
                         <p class="text-sm font-normal mr-2">0 BDT</p>
                     </div>
@@ -83,7 +85,7 @@
                 <img class="md:w-6/12   " src="./assets/quota-protest.png" alt="">
 
                 <div class="md:w-6/12">
-                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md">
+                    <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md mt-6">
                         <img class="ml-2" src="./assets/coin.png" alt="">
                         <p class="text-sm font-normal mr-2">0 BDT</p>
                     </div>
@@ -99,6 +101,8 @@
     <footer>
 
     </footer>
+   
+      
     <script src="./js/index.js"></script>
     <script src="./js/features.js"></script>
     <script src="js/utilities.js"></script>

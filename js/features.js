@@ -7,3 +7,5 @@ document.getElementById('donate-button')
 document.getElementById('show-history').addEventListener('click', function(){
     showSectionById('Transaction-section')
 })
+
+
