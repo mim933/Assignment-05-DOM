@@ -29,11 +29,11 @@
     </header>
     <main>
         <div class="flex items-center justify-center mt-16">
-            <button class="px-6 py-3 rounded-lg mr-4  bg-[#B4F461] border-none text-black">Donation</button>
-            <button class="px-6 py-3 rounded-lg  bg-[#d7d4db] text-black">History</button>
+            <button id="donate-button" class="px-6 py-3 rounded-lg mr-4  bg-[#B4F461] border-none text-black">Donation</button>
+            <button id="show-history" class="px-6 py-3 rounded-lg  bg-[#d7d4db] text-black">History</button>
         </div>
         <section class="max-w-4xl mx-auto mt-16 ">
-            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border border-slate-100 drop-shadow-md rounded-xl ">
+            <div id="donation-field" class="flex flex-col md:flex-row justify-center items-center gap-x-6  border-8 border-slate-100 rounded-xl ">
 
                 <img class="md:w-6/12 " src="./assets/noakhali.png" alt="">
 
@@ -52,8 +52,13 @@
                 </div>
             </div>
         </section>
-        <section class="max-w-4xl mx-auto mt-16 ">
-            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border border-slate-100 drop-shadow-md rounded-xl ">
+        <!-- History section start -->
+           <div id="Transaction-section">
+              <h4 class="text-2xl text-center font-bold">Transaction History</h4>
+           </div>
+        <!-- History section end -->
+        <!-- <section class="max-w-4xl mx-auto mt-16 ">
+            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
 
                 <img class="md:w-6/12 border border-slate-100 drop-shadow-xl rounded-xl" src="./assets/feni.png" alt="">
 
@@ -70,7 +75,7 @@
             </div>
         </section>
         <section class="max-w-4xl mx-auto mt-16 ">
-            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border border-slate-100 drop-shadow-md rounded-xl ">
+            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
 
                 <img class="md:w-6/12   " src="./assets/quota-protest.png" alt="">
 
@@ -85,12 +90,14 @@
                     <button class="h-[40px] w-[400px] bg-[#B4F461] rounded-md text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
 
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/features.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
 
 </html>

@@ -7,4 +7,10 @@ donateButton.addEventListener('click', function(){
     const subtractBalance=parseFloat(mainBalance.innerHTML) - parseFloat(inputField.value);
     mainBalance.innerHTML = subtractBalance;
     console.log(subtractBalance)
+    if(mainBalance === Number){
+       alert('thanks')
+    }else{
+        alert('invalid amount')
+    }
+   
 })
