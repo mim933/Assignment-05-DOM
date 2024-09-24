@@ -11,7 +11,7 @@
 </head>
 
 <body class="">
-    <header class="sticky top-0 bg-white z-30 pb-10">
+    <header class="sticky top-0 bg-white z-30 pb-5">
         <section class="bg-[#F9F7F3] h-20 shadow-md">
             <div class="flex justify-between  mt-2 max-w-4xl mx-auto  ">
                 <a href="Blog.html" class="block w-fit px-8 py-2 rounded-lg bg-[#B4F461] font-semibold ">Blog</a>
@@ -54,48 +54,66 @@
             </div>
         </section>
         <!-- History section start -->
-           <div id="Transaction-section" class="hidden">
-              <h4 class=" text-2xl text-center font-bold">Transaction History</h4>
-              <div id="transaction-container" class="border-2 border-slate-100 ">
-                   <p id="history" class="text-xl font-bold text-center"></p>
-                   <p id="history-time"></p>
+           <div id="Transaction-section" class="hidden max-w-3xl mx-auto">
+              <h4 class=" text-2xl text-center font-bold mb-5">Transaction History</h4>
+              <div id="transaction-container" class=" border-2 border-slate-100 rounded-lg  pt-5 pb-5 ">
+                   <p id="history" class="text-xl font-bold text-center mb-5"></p>
+                   <p id="history-time" class="text-base font-semibold text-center"></p>
               </div>
            </div>
         <!-- History section end -->
         <section class="max-w-4xl mx-auto mt-16 ">
-            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
+            <div id="donation-field2" class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
 
                 <img class="md:w-6/12 border border-slate-100 drop-shadow-xl rounded-xl" src="./assets/feni.png" alt="">
 
                 <div class="md:w-6/12">
                     <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md mt-6">
                         <img class="ml-2" src="./assets/coin.png" alt="">
-                        <p class="text-sm font-normal mr-2">0 BDT</p>
+                        <p class="text-sm font-normal mr-2"><span id="balance2">0</span> BDT</p>
                     </div>
                     <h3 class="text-xl font-bold mt-3 mb-4">Donate for Flood Relief in Feni,Bangladesh</h3>
                     <p class="text-base font-light text-[#111111]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <input class="h-[40px] w-[400px] border border-slate-400 rounded-md mt-3 mb-4" type="text" name="" id="" placeholder="Write Donation Amount"> <br>
-                    <button class="h-[40px] w-[400px] bg-[#B4F461] rounded-md text-xl font-semibold">Donate Now</button>
+                    <input id="input-2-field" class="h-[40px] w-[400px] border border-slate-400 rounded-md mt-3 mb-4" type="text" name="" id="" placeholder="Write Donation Amount"> <br>
+                    <button id="donate-2-btn" class="h-[40px] w-[400px] bg-[#B4F461] rounded-md text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
         </section>
+        <!-- History section start -->
+        <div id="Transaction-section" class="hidden max-w-4xl mx-auto ">
+            <h4 class=" text-2xl text-center font-bold">Transaction History</h4>
+            <div id="transaction-container" class="border2 border-slate-100 rounded-lg ">
+                 <p id="history" class="text-xl font-bold text-center"></p>
+                 <p id="history-time" class="text-base font-semibold text-center"></p>
+            </div>
+         </div>
+      <!-- History section end -->
         <section class="max-w-4xl mx-auto mt-16 ">
-            <div class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
+            <div id="donation-field3" class=" flex flex-col md:flex-row justify-center items-center  gap-x-6  border-8 border-slate-100 drop-shadow-md rounded-xl ">
 
                 <img class="md:w-6/12   " src="./assets/quota-protest.png" alt="">
 
                 <div class="md:w-6/12">
                     <div class="flex justify-center items-center gap-2 h-[10] bg-slate-200 w-fit rounded-md mt-6">
                         <img class="ml-2" src="./assets/coin.png" alt="">
-                        <p class="text-sm font-normal mr-2">0 BDT</p>
+                        <p class="text-sm font-normal mr-2"><span id="balance3">0</span> BDT</p>
                     </div>
                     <h3 class="text-xl font-bold mt-3 mb-4">Aid for Injured in the Quota Movement</h3>
                     <p class="text-base font-light text-[#111111]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                    <input class="h-[40px] w-[400px] border border-slate-400 rounded-md mt-3 mb-4" type="text" name="" id="" placeholder="Write Donation Amount"> <br>
-                    <button class="h-[40px] w-[400px] bg-[#B4F461] rounded-md text-xl font-semibold">Donate Now</button>
+                    <input id="input-3-field" class="h-[40px] w-[400px] border border-slate-400 rounded-md mt-3 mb-4" type="text" name="" id="" placeholder="Write Donation Amount"> <br>
+                    <button id="donate-3-btn" class="h-[40px] w-[400px] bg-[#B4F461] rounded-md text-xl font-semibold">Donate Now</button>
                 </div>
             </div>
         </section>
+        <!-- History section start -->
+        <!-- <div id="Transaction-section" class="hidden max-w-4xl mx-auto ">
+            <h4 class=" text-2xl text-center font-bold">Transaction History</h4>
+            <div id="transaction-container" class="border2 border-slate-100 rounded-lg ">
+                 <p id="history" class="text-xl font-bold text-center"></p>
+                 <p id="history-time" class="text-base font-semibold text-center"></p>
+            </div>
+         </div> -->
+      <!-- History section end -->
 
     </main>
     <footer>
