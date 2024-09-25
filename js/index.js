@@ -62,16 +62,15 @@ Aid.addEventListener('click', function() {
     const inputField = document.getElementById('input-3-field');
     console.log(inputField.value);
     const balance3 = document.getElementById('balance3');
-    balance3.innerHTML = inputField.value;
     const mainBalance = document.getElementById('main-balance');
     if (!isNaN(inputField.value)) {
         alert('Thanks for donating humanity')
 
     } else {
         alert('invalid amount');
-        return
+        return;
     }
-
+    balance3.innerHTML = inputField.value;
     const subtractBalance = parseFloat(mainBalance.innerHTML) - parseFloat(inputField.value);
     mainBalance.innerHTML = subtractBalance;
     console.log(subtractBalance)
