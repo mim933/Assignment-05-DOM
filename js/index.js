@@ -24,6 +24,7 @@ donateButton.addEventListener('click', function () {
    
 })
 
+
 const relief = document.getElementById('donate-2-btn');
 relief.addEventListener('click', function() {
     console.log('added', relief);
@@ -82,5 +83,4 @@ Aid.addEventListener('click', function() {
 
     console.log(mainBalance.innerText, '=')
    
-})
-
+});
