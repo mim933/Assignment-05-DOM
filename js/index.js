@@ -3,8 +3,16 @@ donateButton.addEventListener('click', function () {
     const inputField = document.getElementById('input-1-field');
     console.log(inputField.value);
     const balance = document.getElementById('balance');
-    balance.innerHTML = inputField.value;
+    
     const mainBalance = document.getElementById('main-balance');
+    if (!isNaN(inputField.value)) {
+        alert('Thanks for donating humanity')
+       
+    } else {
+        alert('invalid amount')
+        return ;
+    }
+    balance.innerHTML = inputField.value;
     const subtractBalance = parseFloat(mainBalance.innerHTML) - parseFloat(inputField.value);
     mainBalance.innerHTML = subtractBalance;
     console.log(subtractBalance)
@@ -13,44 +21,39 @@ donateButton.addEventListener('click', function () {
     const currentDate = new Date();
     const time = document.getElementById('history-time');
     time.innerText = currentDate;
-
-    console.log(mainBalance.innerText, '=')
-
-    if (!isNaN(inputField.value)) {
-        alert('Thanks for donating humanity')
-
-    } else {
-        alert('invalid amount')
-    }
-
+   
 })
 
 const relief = document.getElementById('donate-2-btn');
 relief.addEventListener('click', function() {
-    console.log('added', relief)
+    console.log('added', relief);
     const inputField = document.getElementById('input-2-field');
-    console.log(inputField.value);
+    const inputValue = parseFloat(inputField.value); // Parse the value to a number
+    console.log(inputValue);
     const balance2 = document.getElementById('balance2');
-    balance2.innerHTML = inputField.value;
     const mainBalance = document.getElementById('main-balance');
-    const subtractBalance = parseFloat(mainBalance.innerHTML) - parseFloat(inputField.value);
+    if (!isNaN(inputValue) && inputValue > 0) {
+        alert('Thanks for donating to humanity');
+    } else {
+        alert('Invalid amount');
+        return;
+    }
+    
+    balance2.innerHTML = inputValue;
+    const subtractBalance = parseFloat(mainBalance.innerHTML) - inputValue;
     mainBalance.innerHTML = subtractBalance;
-    console.log(subtractBalance)
+    
+    console.log(subtractBalance);
     const history = document.getElementById('history');
     history.innerText = `${balance2.innerText} Taka is Donated for Flood in Feni,Bangladesh ${mainBalance.innerText}`
     const currentDate = new Date();
     const time = document.getElementById('history-time');
     time.innerText = currentDate;
 
-    console.log(mainBalance.innerText, '=')
-    if (!isNaN(inputField.value)) {
-        alert('Thanks for donating humanity')
+   
+});
 
-    } else {
-        alert('invalid amount')
-    }
-
-})
+   
 
 const Aid = document.getElementById('donate-3-btn');
 Aid.addEventListener('click', function() {
@@ -60,6 +63,14 @@ Aid.addEventListener('click', function() {
     const balance3 = document.getElementById('balance3');
     balance3.innerHTML = inputField.value;
     const mainBalance = document.getElementById('main-balance');
+    if (!isNaN(inputField.value)) {
+        alert('Thanks for donating humanity')
+
+    } else {
+        alert('invalid amount');
+        return
+    }
+
     const subtractBalance = parseFloat(mainBalance.innerHTML) - parseFloat(inputField.value);
     mainBalance.innerHTML = subtractBalance;
     console.log(subtractBalance)
@@ -70,12 +81,6 @@ Aid.addEventListener('click', function() {
     time.innerText = currentDate;
 
     console.log(mainBalance.innerText, '=')
-    if (!isNaN(inputField.value)) {
-        alert('Thanks for donating humanity')
-
-    } else {
-        alert('invalid amount')
-    }
-
+   
 })
 
